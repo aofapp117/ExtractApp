@@ -44,17 +44,17 @@ class MainActivity : AppCompatActivity() {
                 val file__path = data?.data
                 val uriPathHelper = URIPathHelper()
                 val filePath = uriPathHelper.getPath(this, file__path!!)
-//                val ddd = getPDFPath(file__path!!)
+
 
 //
-                val result = getPythonHelloWorld(filePath)//"/sdcard/Download/kk.pdf"
+                val result = getPythonHelloWorld(filePath)
                 textView1.text = result
 
             }
         }
         super.onActivityResult(requestCode, resultCode, data)
     }
-//    /sdcard/Download/About us - ICIT ACCOUNT.pdf
+
     fun getPDFPath(uri: Uri?): String? {
         val id = DocumentsContract.getDocumentId(uri)
         val contentUri = ContentUris.withAppendedId(
