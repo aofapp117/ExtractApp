@@ -26,12 +26,6 @@ class MainActivity : AppCompatActivity() {
             intent.setAction(Intent.ACTION_GET_CONTENT)
             startActivityForResult(Intent.createChooser(intent, "Select PDF"), PDF_code)
         }
-//        val aaa = arrayOf("g","d","f",1,"[a,b,c]")
-//        var array : Array<PyObject?> = arrayOfNulls<PyObject>(20)
-        val b  = "a,b,d,dd,d,d,d,".split(",")
-//        val result = getPythonHelloWorld("/storage/emulated/0/Download/kk.pdf").split(",")
-//        val array = arrayOf(getPythonHelloWorld("/storage/emulated/0/Download/kk.pdf"))
-        Log.d("ggggg", b[7].toString())
 
 
 
